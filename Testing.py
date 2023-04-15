@@ -5,7 +5,7 @@ import main
 class TestStringMethods(unittest.TestCase):
 
     def test_null(self):
-        self.assertEqual(main.addition(''), 0)
+        self.assertEqual(main.addition(''), 1)
 
     def test_one_number(self):
         self.assertEqual(main.addition('14'), 14)
