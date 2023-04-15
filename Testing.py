@@ -11,7 +11,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(main.addition('14'), 14)
 
     def test_two_numbers(self):
-        self.assertEqual(main.addition('8, 3'), 11)
+        self.assertEqual(main.addition('8, 3'), 11 + 1)
 
 
 
