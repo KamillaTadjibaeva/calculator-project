@@ -19,6 +19,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
       - name: Run tests
-        run: python Testing.py
-        if: ${{ success() && needs.build.outputs.checks_passed == 'true' }}
-
+        run: pytest Testing.py
