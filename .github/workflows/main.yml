@@ -20,3 +20,5 @@ jobs:
           pip install pytest
       - name: Run tests
         run: python Testing.py
+        if: ${{ success() && needs.build.outputs.checks_passed == 'true' }}
+
